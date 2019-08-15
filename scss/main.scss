@@ -1,10 +1,60 @@
-$primary-color: #2d3561;
-$secondary-color: #c05c7e;
-$helper-color: #f3826f;
-$helper-color2: #ffb961;
-$bright-color: #6b48ff;
-
+@import "config";
+* {
+  box-sizing: border-box;
+}
 body {
+  @include background();
   background: $primary-color;
-  color: white;
+  color: $text-color;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  &.lg-heading {
+    font-size: 6rem;
+  }
+  &.sm-header {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.text-secondary {
+  color: $bright-color;
+}
+main {
+  padding: 4rem;
+  height: 100%;
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding: 0.4rem;
+      &:hover {
+        color: $bright-color;
+        @include easeOut();
+      }
+    }
+  }
+  &#home {
+    //no scroll bar
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
 }
