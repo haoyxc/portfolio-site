@@ -80,7 +80,7 @@ $portrait-img: url("../img/self-pic2.jpg");
       background: $portrait-img;
       background-size: cover;
       background-repeat: no-repeat;
-      border-radius: 50px;
+      border-radius: 50%;
       border-radius: solid 3px $secondary-color;
       object-fit: contain;
     }
