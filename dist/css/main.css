@@ -185,12 +185,12 @@ main {
     padding: 0.5rem;
     border-bottom: #c05c7e 5px solid; }
   .about-info p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300; }
   .about-info h3 {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .about-info h6 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 200;
     margin: 0; }
 
