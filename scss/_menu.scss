@@ -12,7 +12,8 @@ $portrait-img: url("../img/self-pic2.jpg");
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: $text-color;
+
     @include easeOut();
   }
 
@@ -104,7 +105,7 @@ $portrait-img: url("../img/self-pic2.jpg");
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: $text-color;
     text-decoration: none;
     @include easeOut;
     &:hover {

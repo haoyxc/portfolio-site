@@ -3,7 +3,8 @@ $secondary-color: #c05c7e;
 $helper-color: #f3826f;
 $helper-color2: #ffb961;
 $bright-color: #6b48ff;
-$text-color: #fff;
+$text-color: white;
+// $text-color: set-text-color($primary-color);
 $show-home-image: true;
 $home-image: url("../img/busy-street.jpg");
 $background-opacity: 0.9;
@@ -28,6 +29,14 @@ $background-opacity: 0.9;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+//set text color based on background
+@function set-text-color($color) {
+  @if (lightness($color) <30) {
+    @return black;
+  } @else {
+    @return white;
   }
 }
 

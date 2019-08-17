@@ -36,7 +36,17 @@
     .portrait {
       width: 150px;
       height: 150px;
+      border-radius: 50%;
     }
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "biofact1"
+      "biofact2"
+      "biofact3";
+    grid-template-columns: 1fr;
   }
 }
 
