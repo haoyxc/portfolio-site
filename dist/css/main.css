@@ -160,7 +160,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 50px;
   grid-template-areas: "bioimage bio bio" "biofact1 biofact2 biofact3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
@@ -183,6 +183,15 @@ main {
     background: #323232;
     padding: 0.5rem;
     border-bottom: #c05c7e 5px solid; }
+  .about-info p {
+    font-size: 1.5rem;
+    font-weight: 300; }
+  .about-info h3 {
+    font-size: 2rem; }
+  .about-info h6 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin: 0; }
 
 #about .sm-heading {
   padding-bottom: 20px; }

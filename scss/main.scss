@@ -65,7 +65,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 50px;
   grid-template-areas:
     "bioimage bio bio"
     "biofact1 biofact2 biofact3";
@@ -96,6 +96,18 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin: 0;
   }
 }
 #about {
