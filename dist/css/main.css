@@ -124,12 +124,13 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-header,
-  h2.sm-header,
-  h3.sm-header {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(42, 42, 42, 0.5); }
+    background: rgba(42, 42, 42, 0.5);
+    font-weight: 200; }
 
 a {
   color: white;
@@ -151,7 +152,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #6b48ff;
+        color: #c05c7e;
         transition: all 0.5s ease-in-out; }
   main#home {
     overflow: hidden; }
@@ -193,9 +194,6 @@ main {
     font-weight: 200;
     margin: 0; }
 
-#about .sm-heading {
-  padding-bottom: 20px; }
-
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -227,6 +225,22 @@ main {
       .boxes div:hover span {
         color: white; }
 
+.artwork .art-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem; }
+  .artwork .art-center .img-container {
+    position: relative;
+    overflow: hidden; }
+    .artwork .art-center .img-container .art-img {
+      display: block;
+      width: 100%;
+      min-height: 10rem; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -252,7 +266,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {

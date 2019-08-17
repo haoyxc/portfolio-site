@@ -3,7 +3,7 @@
 //XL Screens - widescreens
 @include mediaXL {
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 //Lg Screens - desktops and laptops

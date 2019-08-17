@@ -21,10 +21,11 @@ h3 {
   &.lg-heading {
     font-size: 6rem;
   }
-  &.sm-header {
+  &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
+    font-weight: 200;
   }
 }
 a {
@@ -48,7 +49,7 @@ main {
     a {
       padding: 0.4rem;
       &:hover {
-        color: $bright-color;
+        color: $secondary-color;
         @include easeOut();
       }
     }
@@ -110,13 +111,14 @@ main {
     margin: 0;
   }
 }
-#about {
-  .sm-heading {
-    padding-bottom: 20px;
-  }
-}
 
 // Work page
+// #work {
+//   .sm-heading {
+//     margin-bottom: 30px;
+//     font-weight: 200;
+//   }
+// }
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -151,6 +153,28 @@ main {
       color: $text-color;
       span {
         color: $text-color;
+      }
+    }
+  }
+}
+
+//artwork page
+.artwork {
+  .art-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    .img-container {
+      position: relative;
+      overflow: hidden;
+      .art-img {
+        display: block;
+        width: 100%;
+        min-height: 10rem;
       }
     }
   }
